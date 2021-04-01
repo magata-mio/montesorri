@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .nav-item .nav-link.active
+{   
+    font-size: 18px;
+    color: whitesmoke;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link.dropdown-toggle::after{
+    width: 0; display: none;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: turquoise;
+}
+.navbar-brand .navbar-toggler i{
+    color: white;
+    font-size: 30px;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.button{
+    border: 1px solid whitesmoke;
+    outline: none;
+    color: whitesmoke;
+    position: relative;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: #f44336;
+    border: 1px solid #f44336;
+    color: white;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+.button:hover::after{
+    background: #f44336;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+.button:hover::before{
+    background: #f44336;
+}
+.hover:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.main{
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+}
+.main img{
+    width: 100%;
+    border-radius: 10px;
+}
+.main:hover .layer{
+    transform: scale(1);
+}
+.layer{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    background: #f4433659;
+    height: 100%;
+    transform: scale(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s;
+}
+section.testimonial .owl-carousel .item{
+    border-radius: 10px;
+    background: #cecac959;
+}
+section.testimonial .owl-carousel .item .img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.contact-us .container{
+    border-radius: 10px;
+}
+.contact-us .cover{
+    border-radius: 10px;
+}
