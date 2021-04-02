@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\TeamController;
@@ -36,3 +37,4 @@ ROute::get('/blog',[FrontendController::class,'blog']);
 Route::resource('faq',FaqController::class);
 Route::resource('teams',TeamController::class);
 Route::resource('notices',NoticeController::class);
+Route::resource('message',MessageController::class);

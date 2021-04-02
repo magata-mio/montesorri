@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -13,7 +15,8 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $message = Message::all();
+        return view('backend.message.index',compact('message'));
     }
 
     /**
@@ -23,7 +26,9 @@ class MessageController extends Controller
      */
     public function create()
     {
-        //
+        $team = Team::all();
+
+        return view('backend.message.create',compact('team'));
     }
 
     /**
