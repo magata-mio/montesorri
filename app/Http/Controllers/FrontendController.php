@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function index(){
-        return view('frontend.pages.index');
+        $team = Team::all();
+        return view('frontend.pages.index',compact('team'));
     }
     public function contact(){
         return view('frontend.pages.contact');

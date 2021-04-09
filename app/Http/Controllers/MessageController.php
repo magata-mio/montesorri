@@ -39,7 +39,8 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = Message::find();
+        
     }
 
     /**

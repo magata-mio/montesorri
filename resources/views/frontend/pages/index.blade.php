@@ -14,7 +14,7 @@
 </div>
 @endsection
 @section('content')
-<section class="courses bg-light">
+<section class="courses">
     <div class="container py-5">
         <div class="row">
             <div class="col-md-10 mx-auto text-center title">
@@ -53,6 +53,41 @@
                             similique velit, libero laboriosam architecto possimus debitis molestias pariatur hic id
                             earum voluptate labore asperiores molestiae perferendis placeat, magni voluptas natus?
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="messages py-5 bg-light">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-md-9">
+                <h1>Message From <span class="text-danger">Principle</span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam reiciendis eligendi sunt praesentium? Provident fugit illo repellendus enim pariatur porro! Quae facilis voluptatem vel quisquam eaque quidem doloremque modi eum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae delectus est rerum, corrupti sed aperiam commodi assumenda repellendus provident neque voluptates blanditiis eos optio fuga reiciendis laudantium rem quasi unde quaerat ex maxime nostrum odit? Placeat reprehenderit facilis eveniet quod, sunt non sit voluptates quas ab hic voluptatibus aliquid! Corporis, sapiente alias non quia repellendus quas cum consectetur, cumque aliquid hic inventore doloremque odit explicabo dolorem deleniti eaque est.</p>
+            </div>
+            <div class="col-md-3 text-center bg-light">
+                <div class="card">
+                    <div class="card-body p-1">
+                        <img class="img-fluid" src="{{ asset('img/user1.jpg') }}" alt="">
+                        <h5 class="card-title">Kanchan Pradhan</h5>
+                        <p class="card-text">Principle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-9 order-md-last">
+                <h1>Message From <span class="text-danger">Vice Principle</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, magni nesciunt quidem maiores ut veritatis enim. Minima ut inventore dolorum incidunt, molestiae cum nisi, maiores necessitatibus officia est dolores et nesciunt sapiente nostrum perspiciatis assumenda harum quia fugit, aut facilis voluptatum. Placeat itaque facere repellat, obcaecati voluptatibus mollitia iure modi!</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card">
+                    <div class="card-body p-1">
+                        <img class="img-fluid" src="{{ asset('img/user2.jpg') }}" alt="">
+                        <h5 class="card-title">Samir Khadka</h5>
+                        <p class="card-text">Vice Principle</p>
                     </div>
                 </div>
             </div>
@@ -159,7 +194,7 @@
             <div class="owl-carousel owl-theme">
               <div class="item mb-5 d-flex justify-content-center align-items-center border">
                 <div class="img p-4">
-                  <img class="" src="{{ asset('img/user1.jpg') }}" alt="">
+                  <img class="" src="{{{ asset('team.img') }}}" alt="">
                 </div>
                 <div class="content">
                   <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae consectetur blanditiis maxime quasi totam praesentium quaerat provident ipsam qui!</p>
@@ -232,5 +267,12 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
+<section class="map">
+    <div class="container pt-5">
+        <div class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.6092726622946!2d87.28122971436363!3d26.820567170509065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef41b8cad4083d%3A0xca53528b023cb8f2!2sDharan%20Montessori%20Academy!5e0!3m2!1sen!2snp!4v1617870026163!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
 @endsection
